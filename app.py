@@ -11,7 +11,7 @@ dfp = st.number_input('DFP', 0,15)
 age = st.number_input('Age', 0,100)
 
 if st.button('Predict'):
-    to_predict = np.array([[glucose, age]])
+    to_predict = np.array([[glucose, dfp, age]])
 
     result = predict_diabetes(to_predict)
     print(result)
